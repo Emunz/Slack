@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<style>
+    * { margin: 0px;}
+    .Wrapper{height: 100rem; margin: 0px auto;  }
+    .header{ background-color:#2794DC; color:white; width: 100%; height: 5rem; padding: 1rem;}
+    .Navie{ background-color:#443242; color:white; width: 25%; height: 80rem;}
+    p { font-size:2.5rem;}
+
+</style>
+
+<div style="text-align:center">
+    <!-- <p>{{ title }}</p>
+    -->
+
+<span *ngIf="loggedList.length != 0">
+        <div class="header">
+            <p><i>Welcome, {{ loggedList[0].firstName }}! </i></p>
+        </div>
+    
+        <div class="Navie">
+            <a style="font-size:2.5rem; text-decoration:none;" [routerLink]="['products']">Channels </a> <BR>
+            <a style="font-size:2.5rem; text-decoration:none;" [routerLink]="['yourproducts']">Direct Messaging</a> <BR>  
+            <a style="font-size:2.5rem; text-decoration:none;" href="#" (click)="LogoutData(0)" >Logout</a><BR>
+            <a style="font-size:2.5rem; text-decoration:none;" [routerLink]="['home']">Home </a> <BR>
+        </div>
+</span>
+
+<div style="display: inline;vertical-align:top; width: 20px;">
+    <router-outlet></router-outlet>
+<div>

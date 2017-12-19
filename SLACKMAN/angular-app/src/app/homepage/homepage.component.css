@@ -1,0 +1,23 @@
+fieldset{
+    width: 60%;
+}
+legend{
+    font-size: 3rem;
+}
+input{
+    height: 3rem;
+}
+p {
+    color:red;
+}
+
+form{width:100%;}
+
+.inline{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 60px;
+}
+
+
+
